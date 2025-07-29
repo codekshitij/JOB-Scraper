@@ -1,0 +1,664 @@
+{
+  "Microsoft": {
+    "enabled": true,
+    "careers_url": "https://careers.microsoft.com/professionals/us/en/search-results",
+    "search_params": {
+      "keywords": "new grad software engineer"
+    },
+    "selectors": {
+      "job_container": "[data-ph-at-id='job-item']",
+      "title": "[data-ph-at-id='job-title']",
+      "location": "[data-ph-at-id='job-location']",
+      "url": "a[data-ph-at-id='job-title']",
+      "department": "[data-ph-at-id='job-category']"
+    }
+  },
+  
+  "Google": {
+    "enabled": true,
+    "careers_url": "https://careers.google.com/jobs/results/",
+    "search_params": {
+      "q": "software engineer new grad",
+      "location": "United States"
+    },
+    "selectors": {
+      "job_container": "[data-job-id]",
+      "title": ".VfPpkd-fmcmS-wGMbrd",
+      "location": ".r2fjmd",
+      "url": "a"
+    }
+  },
+  
+  "Amazon": {
+    "enabled": true,
+    "careers_url": "https://amazon.jobs/en/search.json",
+    "search_params": {
+      "base_query": "software engineer new grad",
+      "loc_query": "United States"
+    },
+    "selectors": {
+      "job_container": ".job-tile",
+      "title": ".job-title",
+      "location": ".location-and-id",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Meta": {
+    "enabled": true,
+    "careers_url": "https://www.metacareers.com/jobs",
+    "search_params": {
+      "q": "new grad software engineer"
+    },
+    "selectors": {
+      "job_container": "[data-testid='job-item']",
+      "title": "[data-testid='job-title']",
+      "location": "[data-testid='job-location']",
+      "url": "a[data-testid='job-title']"
+    }
+  },
+  
+  "Apple": {
+    "enabled": true,
+    "careers_url": "https://jobs.apple.com/en-us/search",
+    "search_params": {
+      "search": "software engineer new grad"
+    },
+    "selectors": {
+      "job_container": "#searchresults tbody tr",
+      "title": ".table-col-1 a",
+      "location": ".table-col-2",
+      "url": ".table-col-1 a",
+      "job_type": ".table-col-3"
+    }
+  },
+  
+  "Netflix": {
+    "enabled": true,
+    "careers_url": "https://jobs.netflix.com/api/search",
+    "search_params": {
+      "q": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-card",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Tesla": {
+    "enabled": true,
+    "careers_url": "https://www.tesla.com/careers/search/",
+    "search_params": {
+      "query": "software engineer new grad",
+      "country": "US"
+    },
+    "selectors": {
+      "job_container": ".tds-table tbody tr",
+      "title": ".tds-table-cell:nth-child(1) a",
+      "location": ".tds-table-cell:nth-child(2)",
+      "url": ".tds-table-cell:nth-child(1) a"
+    }
+  },
+  
+  "Salesforce": {
+    "enabled": true,
+    "careers_url": "https://salesforce.wd1.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs",
+    "search_params": {
+      "searchText": "new grad software engineer"
+    },
+    "selectors": {
+      "job_container": "[data-automation-id='jobPostingItem']",
+      "title": "[data-automation-id='jobPostingTitle']",
+      "location": "[data-automation-id='jobPostingLocation']",
+      "url": "a[data-automation-id='jobPostingTitle']"
+    }
+  },
+  
+  "Adobe": {
+    "enabled": true,
+    "careers_url": "https://careers.adobe.com/us/en/search-results",
+    "search_params": {
+      "keywords": "new grad software engineer"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Oracle": {
+    "enabled": true,
+    "careers_url": "https://eeho.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions",
+    "search_params": {
+      "keyword": "new grad software engineer"
+    },
+    "selectors": {
+      "job_container": "[data-bind*='requisitionListItem']",
+      "title": ".requisitionTitle",
+      "location": ".requisitionLocation",
+      "url": ".requisitionTitle a"
+    }
+  },
+  
+  "Uber": {
+    "enabled": true,
+    "careers_url": "https://www.uber.com/us/en/careers/list/",
+    "search_params": {
+      "query": "new grad software engineer"
+    },
+    "selectors": {
+      "job_container": "[data-testid='job-card']",
+      "title": "[data-testid='job-title']",
+      "location": "[data-testid='job-location']",
+      "url": "a[data-testid='job-title']"
+    }
+  },
+  
+  "Airbnb": {
+    "enabled": true,
+    "careers_url": "https://careers.airbnb.com/positions/",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".position-card",
+      "title": ".position-title",
+      "location": ".position-location",
+      "url": ".position-title a"
+    }
+  },
+  
+  "Spotify": {
+    "enabled": true,
+    "careers_url": "https://lifeatspotify.com/jobs",
+    "search_params": {
+      "q": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location", 
+      "url": ".job-title a"
+    }
+  },
+  
+  "Snap": {
+    "enabled": true,
+    "careers_url": "https://snap.com/en-US/jobs",
+    "search_params": {
+      "q": "new grad software engineer"
+    },
+    "selectors": {
+      "job_container": ".job-posting",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "LinkedIn": {
+    "enabled": true,
+    "careers_url": "https://careers.linkedin.com/jobs",
+    "search_params": {
+      "keywords": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-card",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "PayPal": {
+    "enabled": true,
+    "careers_url": "https://paypal.eightfold.ai/careers",
+    "search_params": {
+      "query": "new grad software engineer"
+    },
+    "selectors": {
+      "job_container": ".position-card",
+      "title": ".position-title",
+      "location": ".position-location",
+      "url": ".position-title a"
+    }
+  },
+  
+  "Square": {
+    "enabled": true,
+    "careers_url": "https://careers.squareup.com/us/en/jobs",
+    "search_params": {
+      "query": "new grad"
+    },
+    "selectors": {
+      "job_container": "[data-testid='job-card']",
+      "title": "[data-testid='job-title']",
+      "location": "[data-testid='job-location']",
+      "url": "a[data-testid='job-title']"
+    }
+  },
+  
+  "Stripe": {
+    "enabled": true,
+    "careers_url": "https://stripe.com/jobs/search",
+    "search_params": {
+      "q": "new grad"
+    },
+    "selectors": {
+      "job_container": ".JobsSearch__list-item",
+      "title": ".JobsSearch__position-title",
+      "location": ".JobsSearch__position-location",
+      "url": ".JobsSearch__position-title a"
+    }
+  },
+  
+  "Coinbase": {
+    "enabled": true,
+    "careers_url": "https://www.coinbase.com/careers/positions",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-card",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Robinhood": {
+    "enabled": true,
+    "careers_url": "https://robinhood.com/us/en/careers/",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": "[data-testid='job-posting']",
+      "title": "[data-testid='job-title']",
+      "location": "[data-testid='job-location']",
+      "url": "a[data-testid='job-title']"
+    }
+  },
+  
+  "Palantir": {
+    "enabled": true,
+    "careers_url": "https://www.palantir.com/careers/",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".JobPosting",
+      "title": ".JobPosting__title",
+      "location": ".JobPosting__location",
+      "url": ".JobPosting__title a"
+    }
+  },
+  
+  "Databricks": {
+    "enabled": true,
+    "careers_url": "https://www.databricks.com/company/careers/open-positions",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Snowflake": {
+    "enabled": true,
+    "careers_url": "https://careers.snowflake.com/us/en/search-results",
+    "search_params": {
+      "keywords": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Figma": {
+    "enabled": true,
+    "careers_url": "https://www.figma.com/careers/",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-posting",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Atlassian": {
+    "enabled": true,
+    "careers_url": "https://www.atlassian.com/company/careers/all-jobs",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": "[data-testid='job-item']",
+      "title": "[data-testid='job-title']",
+      "location": "[data-testid='job-location']",
+      "url": "a[data-testid='job-title']"
+    }
+  },
+  
+  "ServiceNow": {
+    "enabled": true,
+    "careers_url": "https://careers.servicenow.com/careers/jobs",
+    "search_params": {
+      "keywords": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Workday": {
+    "enabled": true,
+    "careers_url": "https://workday.wd5.myworkdayjobs.com/Workday",
+    "search_params": {
+      "searchText": "new grad"
+    },
+    "selectors": {
+      "job_container": "[data-automation-id='jobPostingItem']",
+      "title": "[data-automation-id='jobPostingTitle']",
+      "location": "[data-automation-id='jobPostingLocation']",
+      "url": "a[data-automation-id='jobPostingTitle']"
+    }
+  },
+  
+  "Splunk": {
+    "enabled": true,
+    "careers_url": "https://www.splunk.com/en_us/careers/search-jobs.html",
+    "search_params": {
+      "keywords": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Twilio": {
+    "enabled": true,
+    "careers_url": "https://www.twilio.com/company/jobs",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-posting",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "GitHub": {
+    "enabled": true,
+    "careers_url": "https://github.com/about/careers",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-post",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "GitLab": {
+    "enabled": true,
+    "careers_url": "https://about.gitlab.com/jobs/",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Docker": {
+    "enabled": true,
+    "careers_url": "https://www.docker.com/careers/",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-posting",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "VMware": {
+    "enabled": true,
+    "careers_url": "https://careers.vmware.com/jobs",
+    "search_params": {
+      "keywords": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Red Hat": {
+    "enabled": true,
+    "careers_url": "https://www.redhat.com/en/jobs",
+    "search_params": {
+      "keywords": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Nvidia": {
+    "enabled": true,
+    "careers_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+    "search_params": {
+      "searchText": "new grad"
+    },
+    "selectors": {
+      "job_container": "[data-automation-id='jobPostingItem']",
+      "title": "[data-automation-id='jobPostingTitle']",
+      "location": "[data-automation-id='jobPostingLocation']",
+      "url": "a[data-automation-id='jobPostingTitle']"
+    }
+  },
+  
+  "AMD": {
+    "enabled": true,
+    "careers_url": "https://jobs.amd.com/careers/search",
+    "search_params": {
+      "keywords": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Intel": {
+    "enabled": true,
+    "careers_url": "https://jobs.intel.com/ListJobs",
+    "search_params": {
+      "Keywords": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Qualcomm": {
+    "enabled": true,
+    "careers_url": "https://careers.qualcomm.com/careers/jobs",
+    "search_params": {
+      "keywords": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Broadcom": {
+    "enabled": true,
+    "careers_url": "https://www.broadcom.com/company/careers/jobs",
+    "search_params": {
+      "keywords": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Cisco": {
+    "enabled": true,
+    "careers_url": "https://jobs.cisco.com/jobs/SearchJobs",
+    "search_params": {
+      "keywords": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "OpenAI": {
+    "enabled": true,
+    "careers_url": "https://openai.com/careers/",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-posting",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Anthropic": {
+    "enabled": true,
+    "careers_url": "https://www.anthropic.com/careers",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-posting",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Canva": {
+    "enabled": true,
+    "careers_url": "https://www.canva.com/careers/jobs/",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Zoom": {
+    "enabled": true,
+    "careers_url": "https://careers.zoom.us/jobs",
+    "search_params": {
+      "keywords": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Slack": {
+    "enabled": true,
+    "careers_url": "https://slack.com/careers",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-posting",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Dropbox": {
+    "enabled": true,
+    "careers_url": "https://jobs.dropbox.com/",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-item",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  },
+  
+  "Box": {
+    "enabled": true,
+    "careers_url": "https://www.box.com/careers",
+    "search_params": {
+      "search": "new grad"
+    },
+    "selectors": {
+      "job_container": ".job-posting",
+      "title": ".job-title",
+      "location": ".job-location",
+      "url": ".job-title a"
+    }
+  }
+}

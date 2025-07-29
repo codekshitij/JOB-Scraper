@@ -1,0 +1,32 @@
+# Core web scraping dependencies
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml>=5.0.0
+
+# Selenium for JavaScript-heavy sites
+selenium==4.15.2
+webdriver-manager==4.0.1
+
+# Data processing and Excel export
+pandas>=2.2.0
+openpyxl==3.1.2
+
+# Utilities
+fake-useragent==1.4.0
+python-dotenv==1.0.0
+
+# Optional: For enhanced functionality
+# Uncomment these if you want additional features
+
+# For async scraping (optional)
+# aiohttp==3.9.1
+# aiosqlite==0.19.0
+
+# For proxy rotation (optional)
+# requests[socks]==2.31.0
+
+# For rate limiting (optional)
+# ratelimiter==1.2.0
+
+# For advanced parsing (optional)
+# selectolax==0.3.17

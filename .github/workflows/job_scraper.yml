@@ -1,0 +1,87 @@
+name: New Grad Job Scraper
+
+on:
+  schedule:
+    # Runs at 7:30 AM, 1:30 PM, 7:30 PM, 1:30 AM EST (Atlanta time)
+    - cron: '30 12,18,0,6 * * *'
+  workflow_dispatch: # Allow manual triggering
+  push:
+    branches: [main]
+    paths: ['companies_config.json', 'scraper.py']
+
+jobs:
+  scrape-jobs:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install Chrome
+      uses: browser-actions/setup-chrome@latest
+      with:
+        chrome-version: stable
+        
+    - name: Install ChromeDriver
+      uses: nanasess/setup-chromedriver@master
+        
+    - name: Cache pip dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+          
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Download previous results
+      continue-on-error: true
+      run: |
+        if [ -f "latest_results.json" ]; then
+          echo "Previous results found"
+        else
+          echo "No previous results found, this will be treated as first run"
+        fi
+        
+    - name: Run job scraper
+      env:
+        EMAIL_USER: ${{ secrets.EMAIL_USER }}
+        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+        SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+        SMTP_PORT: ${{ secrets.SMTP_PORT }}
+      run: |
+        python scraper.py --config companies_config.json
+        
+    - name: Upload results as artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: job-results-${{ github.run_number }}
+        path: |
+          job_results_*.json
+          cs_new_grad_jobs_report_*.xlsx
+          latest_results.json
+        retention-days: 30
+        
+    - name: Commit and push results
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        git add latest_results.json
+        
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update latest job results - $(date)"
+          git push
+        fi
