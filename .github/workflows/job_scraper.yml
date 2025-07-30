@@ -53,6 +53,7 @@ jobs:
         fi
         
     - name: Run job scraper
+      id: scraper
       env:
         EMAIL_USER: ${{ secrets.EMAIL_USER }}
         EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
@@ -60,16 +61,73 @@ jobs:
         SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
         SMTP_PORT: ${{ secrets.SMTP_PORT }}
       run: |
-        python scraper.py --config companies_config.json
+        echo "Starting job scraper..."
+        python scraper.py --config companies_config.json > scraper_output.log 2>&1
+        
+        # Extract key metrics from output
+        TOTAL_JOBS=$(grep "📊 Total CS Jobs Found:" scraper_output.log | grep -o '[0-9]\+' | head -1 || echo "0")
+        NEW_JOBS=$(grep "🆕 New Jobs This Run:" scraper_output.log | grep -o '[0-9]\+' | head -1 || echo "0")
+        COMPANIES_SCRAPED=$(grep "🏢 Companies Scraped:" scraper_output.log | grep -o '[0-9]\+/[0-9]\+' | head -1 || echo "0/0")
+        ERRORS=$(grep "❌ Errors:" scraper_output.log | grep -o '[0-9]\+' | head -1 || echo "0")
+        
+        # Set outputs for use in other steps
+        echo "total_jobs=$TOTAL_JOBS" >> $GITHUB_OUTPUT
+        echo "new_jobs=$NEW_JOBS" >> $GITHUB_OUTPUT
+        echo "companies_scraped=$COMPANIES_SCRAPED" >> $GITHUB_OUTPUT
+        echo "errors=$ERRORS" >> $GITHUB_OUTPUT
+        
+        # Display output
+        cat scraper_output.log
+        
+        # Check if scraper succeeded
+        if [ $? -eq 0 ]; then
+          echo "✅ Scraper completed successfully"
+          echo "scraper_success=true" >> $GITHUB_OUTPUT
+        else
+          echo "❌ Scraper failed"
+          echo "scraper_success=false" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Create Job Summary
+      if: always()
+      run: |
+        echo "# 🎓 CS New Grad Job Scraper Results" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "## 📊 Summary" >> $GITHUB_STEP_SUMMARY
+        echo "- **Total Jobs Found:** ${{ steps.scraper.outputs.total_jobs }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **New Jobs This Run:** ${{ steps.scraper.outputs.new_jobs }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Companies Scraped:** ${{ steps.scraper.outputs.companies_scraped }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Errors:** ${{ steps.scraper.outputs.errors }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Status:** ${{ steps.scraper.outputs.scraper_success == 'true' && '✅ Success' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Run Time:** $(date)" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        if [ "${{ steps.scraper.outputs.new_jobs }}" -gt "0" ]; then
+          echo "## 🎉 New Jobs Found!" >> $GITHUB_STEP_SUMMARY
+          echo "Check the Excel report in the artifacts for details." >> $GITHUB_STEP_SUMMARY
+        elif [ "${{ steps.scraper.outputs.total_jobs }}" -eq "0" ]; then
+          echo "## ⚠️ No Jobs Found" >> $GITHUB_STEP_SUMMARY
+          echo "This might indicate configuration issues. Check the logs for details." >> $GITHUB_STEP_SUMMARY
+        else
+          echo "## 📋 No New Jobs" >> $GITHUB_STEP_SUMMARY
+          echo "No new jobs since last run, but found ${{ steps.scraper.outputs.total_jobs }} total jobs." >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "## 📁 Files Generated" >> $GITHUB_STEP_SUMMARY
+        echo "- JSON Results: \`job_results_$(date +%Y%m%d_%H%M%S).json\`" >> $GITHUB_STEP_SUMMARY
+        echo "- Excel Report: \`cs_new_grad_jobs_report_$(date +%Y%m%d_%H%M%S).xlsx\`" >> $GITHUB_STEP_SUMMARY
         
     - name: Upload results as artifacts
       uses: actions/upload-artifact@v4
+      if: always()
       with:
         name: job-results-${{ github.run_number }}
         path: |
           job_results_*.json
           cs_new_grad_jobs_report_*.xlsx
           latest_results.json
+          scraper_output.log
         retention-days: 30
         
     - name: Commit and push results
@@ -85,3 +143,15 @@ jobs:
           git commit -m "Update latest job results - $(date)"
           git push
         fi
+        
+    - name: Send Slack/Discord Notification (Optional)
+      if: steps.scraper.outputs.new_jobs > 0
+      run: |
+        echo "🎉 Found ${{ steps.scraper.outputs.new_jobs }} new CS jobs!"
+        # Add Slack/Discord webhook here if desired
+        
+    - name: Notify on Failure
+      if: failure()
+      run: |
+        echo "❌ Job scraper failed! Check the logs and artifacts for details."
+        # Add failure notification webhook here if desired
