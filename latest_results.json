@@ -1,5 +1,5 @@
 {
-  "scrape_timestamp": "2025-09-12T01:59:39.371912",
+  "scrape_timestamp": "2025-09-12T06:45:43.837126",
   "total_companies": 47,
   "successful_scrapes": 45,
   "selenium_scrapes": 13,
@@ -9,299 +9,299 @@
   "errors": [
     {
       "company": "VMware",
-      "error": "Failed to scrape VMware: Message: timeout: Timed out receiving message from renderer: 300.000\n  (Session info: chrome=140.0.7339.80)\nStacktrace:\n#0 0x5647a1e5394a <unknown>\n#1 0x5647a18c88a0 <unknown>\n#2 0x5647a18b0eb9 <unknown>\n#3 0x5647a18b0bc5 <unknown>\n#4 0x5647a18aea42 <unknown>\n#5 0x5647a18af22a <unknown>\n#6 0x5647a18cbdb9 <unknown>\n#7 0x5647a1966835 <unknown>\n#8 0x5647a1940032 <unknown>\n#9 0x5647a1965c23 <unknown>\n#10 0x5647a193fe03 <unknown>\n#11 0x5647a190c968 <unknown>\n#12 0x5647a190d5e1 <unknown>\n#13 0x5647a1e17548 <unknown>\n#14 0x5647a1e1b272 <unknown>\n#15 0x5647a1dfe313 <unknown>\n#16 0x5647a1e1bdc5 <unknown>\n#17 0x5647a1de349f <unknown>\n#18 0x5647a1e40158 <unknown>\n#19 0x5647a1e40332 <unknown>\n#20 0x5647a1e52a53 <unknown>\n#21 0x7fc3cae9caa4 <unknown>\n#22 0x7fc3caf29c3c <unknown>\n",
-      "timestamp": "2025-09-12T02:18:12.469442",
-      "scrape_time_seconds": 394.18
+      "error": "Failed to scrape VMware: Message: timeout: Timed out receiving message from renderer: 300.000\n  (Session info: chrome=140.0.7339.80)\nStacktrace:\n#0 0x55777f7d694a <unknown>\n#1 0x55777f24b8a0 <unknown>\n#2 0x55777f233eb9 <unknown>\n#3 0x55777f233bc5 <unknown>\n#4 0x55777f231a42 <unknown>\n#5 0x55777f23222a <unknown>\n#6 0x55777f24edb9 <unknown>\n#7 0x55777f2e9835 <unknown>\n#8 0x55777f2c3032 <unknown>\n#9 0x55777f2e8c23 <unknown>\n#10 0x55777f2c2e03 <unknown>\n#11 0x55777f28f968 <unknown>\n#12 0x55777f2905e1 <unknown>\n#13 0x55777f79a548 <unknown>\n#14 0x55777f79e272 <unknown>\n#15 0x55777f781313 <unknown>\n#16 0x55777f79edc5 <unknown>\n#17 0x55777f76649f <unknown>\n#18 0x55777f7c3158 <unknown>\n#19 0x55777f7c3332 <unknown>\n#20 0x55777f7d5a53 <unknown>\n#21 0x7f8a40e9caa4 <unknown>\n#22 0x7f8a40f29c3c <unknown>\n",
+      "timestamp": "2025-09-12T07:03:57.846483",
+      "scrape_time_seconds": 394.13
     },
     {
       "company": "AMD",
-      "error": "Failed to scrape AMD: Message: unknown error: net::ERR_NAME_NOT_RESOLVED\n  (Session info: chrome=140.0.7339.80)\nStacktrace:\n#0 0x5647a1e5394a <unknown>\n#1 0x5647a18c88a0 <unknown>\n#2 0x5647a18bfce8 <unknown>\n#3 0x5647a18b11b6 <unknown>\n#4 0x5647a18b2f00 <unknown>\n#5 0x5647a18b155e <unknown>\n#6 0x5647a18b0ee7 <unknown>\n#7 0x5647a18b0bc5 <unknown>\n#8 0x5647a18aea42 <unknown>\n#9 0x5647a18af22a <unknown>\n#10 0x5647a18cbdb9 <unknown>\n#11 0x5647a1966835 <unknown>\n#12 0x5647a1940032 <unknown>\n#13 0x5647a1965c23 <unknown>\n#14 0x5647a193fe03 <unknown>\n#15 0x5647a190c968 <unknown>\n#16 0x5647a190d5e1 <unknown>\n#17 0x5647a1e17548 <unknown>\n#18 0x5647a1e1b272 <unknown>\n#19 0x5647a1dfe313 <unknown>\n#20 0x5647a1e1bdc5 <unknown>\n#21 0x5647a1de349f <unknown>\n#22 0x5647a1e40158 <unknown>\n#23 0x5647a1e40332 <unknown>\n#24 0x5647a1e52a53 <unknown>\n#25 0x7fc3cae9caa4 <unknown>\n#26 0x7fc3caf29c3c <unknown>\n",
-      "timestamp": "2025-09-12T02:18:25.423180",
-      "scrape_time_seconds": 4.24
+      "error": "Failed to scrape AMD: Message: unknown error: net::ERR_NAME_NOT_RESOLVED\n  (Session info: chrome=140.0.7339.80)\nStacktrace:\n#0 0x55777f7d694a <unknown>\n#1 0x55777f24b8a0 <unknown>\n#2 0x55777f242ce8 <unknown>\n#3 0x55777f2341b6 <unknown>\n#4 0x55777f235f00 <unknown>\n#5 0x55777f23455e <unknown>\n#6 0x55777f233ee7 <unknown>\n#7 0x55777f233bc5 <unknown>\n#8 0x55777f231a42 <unknown>\n#9 0x55777f23222a <unknown>\n#10 0x55777f24edb9 <unknown>\n#11 0x55777f2e9835 <unknown>\n#12 0x55777f2c3032 <unknown>\n#13 0x55777f2e8c23 <unknown>\n#14 0x55777f2c2e03 <unknown>\n#15 0x55777f28f968 <unknown>\n#16 0x55777f2905e1 <unknown>\n#17 0x55777f79a548 <unknown>\n#18 0x55777f79e272 <unknown>\n#19 0x55777f781313 <unknown>\n#20 0x55777f79edc5 <unknown>\n#21 0x55777f76649f <unknown>\n#22 0x55777f7c3158 <unknown>\n#23 0x55777f7c3332 <unknown>\n#24 0x55777f7d5a53 <unknown>\n#25 0x7f8a40e9caa4 <unknown>\n#26 0x7f8a40f29c3c <unknown>\n",
+      "timestamp": "2025-09-12T07:04:09.396188",
+      "scrape_time_seconds": 4.4
     }
   ],
   "scraping_stats": {
     "Microsoft": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.28,
+      "scrape_time_seconds": 0.19,
       "method_used": "requests",
       "success": true
     },
     "Google": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.77,
+      "scrape_time_seconds": 0.54,
       "method_used": "requests",
       "success": true
     },
     "Amazon": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.75,
+      "scrape_time_seconds": 0.45,
       "method_used": "requests",
       "success": true
     },
     "Meta": {
       "jobs_found": 0,
-      "scrape_time_seconds": 108.59,
+      "scrape_time_seconds": 111.35,
       "method_used": "requests",
       "success": true
     },
     "Apple": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.61,
+      "scrape_time_seconds": 0.49,
       "method_used": "requests",
       "success": true
     },
     "Netflix": {
       "jobs_found": 0,
-      "scrape_time_seconds": 56.73,
+      "scrape_time_seconds": 57.5,
       "method_used": "requests",
       "success": true
     },
     "Tesla": {
       "jobs_found": 0,
-      "scrape_time_seconds": 106.0,
+      "scrape_time_seconds": 105.83,
       "method_used": "requests",
       "success": true
     },
     "Salesforce": {
       "jobs_found": 0,
-      "scrape_time_seconds": 106.07,
+      "scrape_time_seconds": 105.66,
       "method_used": "requests",
       "success": true
     },
     "Adobe": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.8,
+      "scrape_time_seconds": 0.75,
       "method_used": "requests",
       "success": true
     },
     "Oracle": {
       "jobs_found": 0,
-      "scrape_time_seconds": 2.25,
+      "scrape_time_seconds": 1.8,
       "method_used": "requests",
       "success": true
     },
     "Uber": {
       "jobs_found": 0,
-      "scrape_time_seconds": 1.04,
+      "scrape_time_seconds": 0.42,
       "method_used": "requests",
       "success": true
     },
     "Airbnb": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.66,
+      "scrape_time_seconds": 0.74,
       "method_used": "requests",
       "success": true
     },
     "Spotify": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.56,
+      "scrape_time_seconds": 0.49,
       "method_used": "requests",
       "success": true
     },
     "Snap": {
       "jobs_found": 0,
-      "scrape_time_seconds": 1.86,
+      "scrape_time_seconds": 2.61,
       "method_used": "requests",
       "success": true
     },
     "LinkedIn": {
       "jobs_found": 0,
-      "scrape_time_seconds": 106.12,
+      "scrape_time_seconds": 105.89,
       "method_used": "requests",
       "success": true
     },
     "PayPal": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.42,
+      "scrape_time_seconds": 0.6,
       "method_used": "requests",
       "success": true
     },
     "Square": {
       "jobs_found": 0,
-      "scrape_time_seconds": 1.22,
+      "scrape_time_seconds": 0.59,
       "method_used": "requests",
       "success": true
     },
     "Stripe": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.96,
+      "scrape_time_seconds": 1.61,
       "method_used": "requests",
       "success": true
     },
     "Coinbase": {
       "jobs_found": 0,
-      "scrape_time_seconds": 46.75,
+      "scrape_time_seconds": 46.87,
       "method_used": "requests",
       "success": true
     },
     "Robinhood": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.61,
+      "scrape_time_seconds": 0.22,
       "method_used": "requests",
       "success": true
     },
     "Palantir": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.56,
+      "scrape_time_seconds": 0.15,
       "method_used": "requests",
       "success": true
     },
     "Databricks": {
       "jobs_found": 0,
-      "scrape_time_seconds": 1.17,
+      "scrape_time_seconds": 0.19,
       "method_used": "requests",
       "success": true
     },
     "Snowflake": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.87,
+      "scrape_time_seconds": 0.64,
       "method_used": "requests",
       "success": true
     },
     "Figma": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.39,
+      "scrape_time_seconds": 0.45,
       "method_used": "requests",
       "success": true
     },
     "Atlassian": {
       "jobs_found": 0,
-      "scrape_time_seconds": 2.93,
+      "scrape_time_seconds": 0.19,
       "method_used": "requests",
       "success": true
     },
     "ServiceNow": {
       "jobs_found": 0,
-      "scrape_time_seconds": 40.72,
+      "scrape_time_seconds": 40.14,
       "method_used": "requests",
       "success": true
     },
     "Workday": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.49,
+      "scrape_time_seconds": 0.33,
       "method_used": "requests",
       "success": true
     },
     "Splunk": {
       "jobs_found": 0,
-      "scrape_time_seconds": 2.45,
+      "scrape_time_seconds": 1.81,
       "method_used": "requests",
       "success": true
     },
     "Twilio": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.93,
+      "scrape_time_seconds": 0.43,
       "method_used": "requests",
       "success": true
     },
     "GitHub": {
       "jobs_found": 0,
-      "scrape_time_seconds": 1.7,
+      "scrape_time_seconds": 0.97,
       "method_used": "requests",
       "success": true
     },
     "GitLab": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.37,
+      "scrape_time_seconds": 0.2,
       "method_used": "requests",
       "success": true
     },
     "Docker": {
       "jobs_found": 0,
-      "scrape_time_seconds": 1.89,
+      "scrape_time_seconds": 0.2,
       "method_used": "requests",
       "success": true
     },
     "VMware": {
       "jobs_found": 0,
-      "scrape_time_seconds": 394.18,
+      "scrape_time_seconds": 394.13,
       "method_used": "requests",
       "success": false,
-      "error": "Message: timeout: Timed out receiving message from renderer: 300.000\n  (Session info: chrome=140.0.7339.80)\nStacktrace:\n#0 0x5647a1e5394a <unknown>\n#1 0x5647a18c88a0 <unknown>\n#2 0x5647a18b0eb9 <unknown>\n#3 0x5647a18b0bc5 <unknown>\n#4 0x5647a18aea42 <unknown>\n#5 0x5647a18af22a <unknown>\n#6 0x5647a18cbdb9 <unknown>\n#7 0x5647a1966835 <unknown>\n#8 0x5647a1940032 <unknown>\n#9 0x5647a1965c23 <unknown>\n#10 0x5647a193fe03 <unknown>\n#11 0x5647a190c968 <unknown>\n#12 0x5647a190d5e1 <unknown>\n#13 0x5647a1e17548 <unknown>\n#14 0x5647a1e1b272 <unknown>\n#15 0x5647a1dfe313 <unknown>\n#16 0x5647a1e1bdc5 <unknown>\n#17 0x5647a1de349f <unknown>\n#18 0x5647a1e40158 <unknown>\n#19 0x5647a1e40332 <unknown>\n#20 0x5647a1e52a53 <unknown>\n#21 0x7fc3cae9caa4 <unknown>\n#22 0x7fc3caf29c3c <unknown>\n"
+      "error": "Message: timeout: Timed out receiving message from renderer: 300.000\n  (Session info: chrome=140.0.7339.80)\nStacktrace:\n#0 0x55777f7d694a <unknown>\n#1 0x55777f24b8a0 <unknown>\n#2 0x55777f233eb9 <unknown>\n#3 0x55777f233bc5 <unknown>\n#4 0x55777f231a42 <unknown>\n#5 0x55777f23222a <unknown>\n#6 0x55777f24edb9 <unknown>\n#7 0x55777f2e9835 <unknown>\n#8 0x55777f2c3032 <unknown>\n#9 0x55777f2e8c23 <unknown>\n#10 0x55777f2c2e03 <unknown>\n#11 0x55777f28f968 <unknown>\n#12 0x55777f2905e1 <unknown>\n#13 0x55777f79a548 <unknown>\n#14 0x55777f79e272 <unknown>\n#15 0x55777f781313 <unknown>\n#16 0x55777f79edc5 <unknown>\n#17 0x55777f76649f <unknown>\n#18 0x55777f7c3158 <unknown>\n#19 0x55777f7c3332 <unknown>\n#20 0x55777f7d5a53 <unknown>\n#21 0x7f8a40e9caa4 <unknown>\n#22 0x7f8a40f29c3c <unknown>\n"
     },
     "Red Hat": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.29,
+      "scrape_time_seconds": 0.09,
       "method_used": "requests",
       "success": true
     },
     "Nvidia": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.42,
+      "scrape_time_seconds": 0.39,
       "method_used": "requests",
       "success": true
     },
     "AMD": {
       "jobs_found": 0,
-      "scrape_time_seconds": 4.24,
+      "scrape_time_seconds": 4.4,
       "method_used": "requests",
       "success": false,
-      "error": "Message: unknown error: net::ERR_NAME_NOT_RESOLVED\n  (Session info: chrome=140.0.7339.80)\nStacktrace:\n#0 0x5647a1e5394a <unknown>\n#1 0x5647a18c88a0 <unknown>\n#2 0x5647a18bfce8 <unknown>\n#3 0x5647a18b11b6 <unknown>\n#4 0x5647a18b2f00 <unknown>\n#5 0x5647a18b155e <unknown>\n#6 0x5647a18b0ee7 <unknown>\n#7 0x5647a18b0bc5 <unknown>\n#8 0x5647a18aea42 <unknown>\n#9 0x5647a18af22a <unknown>\n#10 0x5647a18cbdb9 <unknown>\n#11 0x5647a1966835 <unknown>\n#12 0x5647a1940032 <unknown>\n#13 0x5647a1965c23 <unknown>\n#14 0x5647a193fe03 <unknown>\n#15 0x5647a190c968 <unknown>\n#16 0x5647a190d5e1 <unknown>\n#17 0x5647a1e17548 <unknown>\n#18 0x5647a1e1b272 <unknown>\n#19 0x5647a1dfe313 <unknown>\n#20 0x5647a1e1bdc5 <unknown>\n#21 0x5647a1de349f <unknown>\n#22 0x5647a1e40158 <unknown>\n#23 0x5647a1e40332 <unknown>\n#24 0x5647a1e52a53 <unknown>\n#25 0x7fc3cae9caa4 <unknown>\n#26 0x7fc3caf29c3c <unknown>\n"
+      "error": "Message: unknown error: net::ERR_NAME_NOT_RESOLVED\n  (Session info: chrome=140.0.7339.80)\nStacktrace:\n#0 0x55777f7d694a <unknown>\n#1 0x55777f24b8a0 <unknown>\n#2 0x55777f242ce8 <unknown>\n#3 0x55777f2341b6 <unknown>\n#4 0x55777f235f00 <unknown>\n#5 0x55777f23455e <unknown>\n#6 0x55777f233ee7 <unknown>\n#7 0x55777f233bc5 <unknown>\n#8 0x55777f231a42 <unknown>\n#9 0x55777f23222a <unknown>\n#10 0x55777f24edb9 <unknown>\n#11 0x55777f2e9835 <unknown>\n#12 0x55777f2c3032 <unknown>\n#13 0x55777f2e8c23 <unknown>\n#14 0x55777f2c2e03 <unknown>\n#15 0x55777f28f968 <unknown>\n#16 0x55777f2905e1 <unknown>\n#17 0x55777f79a548 <unknown>\n#18 0x55777f79e272 <unknown>\n#19 0x55777f781313 <unknown>\n#20 0x55777f79edc5 <unknown>\n#21 0x55777f76649f <unknown>\n#22 0x55777f7c3158 <unknown>\n#23 0x55777f7c3332 <unknown>\n#24 0x55777f7d5a53 <unknown>\n#25 0x7f8a40e9caa4 <unknown>\n#26 0x7f8a40f29c3c <unknown>\n"
     },
     "Intel": {
       "jobs_found": 0,
-      "scrape_time_seconds": 108.01,
+      "scrape_time_seconds": 107.89,
       "method_used": "requests",
       "success": true
     },
     "Qualcomm": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.6,
+      "scrape_time_seconds": 0.76,
       "method_used": "requests",
       "success": true
     },
     "Broadcom": {
       "jobs_found": 0,
-      "scrape_time_seconds": 58.15,
+      "scrape_time_seconds": 58.65,
       "method_used": "requests",
       "success": true
     },
     "Cisco": {
       "jobs_found": 0,
-      "scrape_time_seconds": 2.77,
+      "scrape_time_seconds": 3.3,
       "method_used": "requests",
       "success": true
     },
     "OpenAI": {
       "jobs_found": 0,
-      "scrape_time_seconds": 106.89,
+      "scrape_time_seconds": 106.66,
       "method_used": "requests",
       "success": true
     },
     "Anthropic": {
       "jobs_found": 0,
-      "scrape_time_seconds": 1.41,
+      "scrape_time_seconds": 0.21,
       "method_used": "requests",
       "success": true
     },
     "Canva": {
       "jobs_found": 0,
-      "scrape_time_seconds": 47.68,
+      "scrape_time_seconds": 46.63,
       "method_used": "requests",
       "success": true
     },
     "Zoom": {
       "jobs_found": 0,
-      "scrape_time_seconds": 107.52,
+      "scrape_time_seconds": 106.78,
       "method_used": "requests",
       "success": true
     },
     "Slack": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.47,
+      "scrape_time_seconds": 0.29,
       "method_used": "requests",
       "success": true
     },
     "Dropbox": {
       "jobs_found": 0,
-      "scrape_time_seconds": 0.33,
+      "scrape_time_seconds": 0.42,
       "method_used": "requests",
       "success": true
     },
     "Box": {
       "jobs_found": 0,
-      "scrape_time_seconds": 40.61,
+      "scrape_time_seconds": 39.11,
       "method_used": "requests",
       "success": true
     }
